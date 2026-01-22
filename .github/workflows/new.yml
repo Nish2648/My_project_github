@@ -37,6 +37,14 @@ jobs:
       - name: Run a Four line
         run: echo For Testing purpose
 
+  Deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      # Runs a single command using the runners shell
+      - name: Run deploy for this
+        run: echo Deploying.....
+
  
    
 
